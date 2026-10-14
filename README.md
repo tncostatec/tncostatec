@@ -14,6 +14,7 @@ Disponível para oportunidades remotas (CLT ou PJ) em back-end Python, DevOps e 
 
 | Repositório | O que é | O que mostra |
 |---|---|---|
+| [modelos-de-sites](https://github.com/tncostatec/modelos-de-sites) · [demos](https://tncostatec.github.io/modelos-de-sites/) | Seis modelos de site para negócios locais (clínica, estética, restaurante, imobiliária, advocacia, serviços residenciais), cada um com uma técnica diferente: vanilla moderno, Tailwind compilado + Alpine, PWA, catálogo com estado na URL e mapa, gerador estático em Python, landing de conversão. Backend FastAPI com 15 testes. MIT. | Frontend com acessibilidade e SEO verificados por script em CI (390 e 1440 px, console limpo), contrato único de formulários com modo sem backend, honeypot, consentimento LGPD, corrida de agendamento decidida no banco, webhook com retentativas, Docker endurecido. |
 | [nfse-nacional-kit](https://github.com/tncostatec/nfse-nacional-kit) | Emissão, consulta e cancelamento de NFS-e no padrão Nacional (SEFIN/gov.br) em Python: XML da DPS, assinatura XMLDSig com certificado A1, cliente mTLS. Extraído de um ERP que emite notas reais. MIT. | Integração com órgão público medida contra o validador real; as decisões "que parecem erradas" documentadas com a data da medição (`docs/ARMADILHAS.md`); CI com autoteste sem certificado. |
 | [postmortems](https://github.com/tncostatec/postmortems) | Relatos de incidentes reais em VPS Linux com Docker, anonimizados: um vazamento de processos (PM2 sem `ps`) que levou a VPS a 100 % de CPU e um minerador instalado por RCE em Next.js. | Linha do tempo com fonte de cada observação, causa raiz separada dos fatores contribuintes, correção provada (como foi testada), efeitos colaterais da própria resposta e lições escritas como regra. |
 | [daytrade-orb-alpaca](https://github.com/tncostatec/daytrade-orb-alpaca) | Estratégia intradiária (Opening Range Breakout no SPY) levada do backtest com custos a 20 pregões de paper trading automático na Alpaca. Resultado medido: indistinguível de sorte; dinheiro real: não. MIT. | Método com teste fora da amostra e filtro escolhido só no ano 1; executor desatendido com retomada segura após queda, registro em sombra dos dias barrados e benchmark buy-and-hold; quatro incidentes operacionais virando código e 20 testes offline no CI. |
@@ -43,7 +44,7 @@ negócio nem dado de terceiros.
 - **Dados:** PostgreSQL (9.3 a 16: multi-tenant por schema, índices parciais, tuning, migração e unificação de bases), SQL Server (T-SQL, pyodbc), MySQL, Redis, MinIO; ETL com Pentaho Kettle; JasperReports.
 - **Infra e DevOps:** Ubuntu, Docker e Docker Compose, Nginx, Traefik, Easypanel, Cloudflare (DNS, Pages, Turnstile), Let's Encrypt, GitHub Actions, cron e systemd; Sentry, Uptime Kuma, Trivy, Dependabot, Semgrep.
 - **Integrações:** Asaas, Santander Cobrança, InfinitePay, NFS-e Nacional, SERPRO, DropSigner, Evolution API e WhatsApp Cloud API, Google Calendar, Brevo, Backblaze B2, Hostinger API, Anthropic e Groq.
-- **Front-end e testes:** Next.js, React, Tailwind CSS, TanStack Query; pytest, Vitest, Playwright.
+- **Front-end e testes:** Next.js, React, Tailwind CSS, Alpine.js, TanStack Query; pytest, Vitest, Playwright.
 - **Automação:** n8n self-hosted (workflows, agentes de IA, Code nodes), Make, Bubble.
 
 ## Onde me encontrar
